@@ -16,6 +16,7 @@ def delete_books():
         cur.execute(delete_sql, 'A')
 
         conn.commit()                                   # 데이터베이스 반영
+        print('데이터 삭제 건수]', cur.rowcount)
         print('[데이터 삭제 완료] ================== ')
 
     except:

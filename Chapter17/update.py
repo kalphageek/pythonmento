@@ -16,6 +16,7 @@ def update_books():
         cur.execute(update_sql, (1, '개발자의 코드'))
 
         conn.commit()                                   # 데이터베이스 반영
+        print('데이터 수정 건수]', cur.rowcount)
         print('[데이터 수정 완료] ================== ')
 
     except:
